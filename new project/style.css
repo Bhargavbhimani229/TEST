@@ -1,0 +1,42 @@
+.lg{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(126,166,220,1) 100%);
+
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+  font-style:italic;
+  font-family:lg;
+  font-weight: 200;
+  font-display: auto;
+  gap: 10px;
+  border-radius: 5%;
+  justify-content: center;
+}
+.inp{
+  border: 2px solid black;
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  font-style:italic;
+  font-family:lg;
+  font-weight: 200;
+  font-display: auto;
+  border-radius: 10%;
+}
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+.btn{
+  text-align: center;
+  margin: auto;
+ border-radius: 10%;
+ 
+ 
+}

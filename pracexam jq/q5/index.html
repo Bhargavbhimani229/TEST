@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sale Ending Timeline</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  .timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+  }
+</style>
+</head>
+<body>
+
+<div class="timer">Sale ends in: <span id="timer"></span></div>
+
+<script>
+$(document).ready(function(){
+   
+    var endTime = new Date('2024-04-30T00:00:00').getTime();
+
+ 
+    var x = setInterval(function() {
+   
+        var now = new Date().getTime();
+        
+        var distance = endTime - now;        
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var countdown = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        $("#timer").text(countdown);
+        if (distance < 0) {
+            clearInterval(x);
+            $("#timer").text("Sale is over!");
+        }
+    }, 1000);
+});
+</script>
+
+</body>
+</html>

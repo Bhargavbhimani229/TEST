@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Banner Headline with jQuery</title>
+<style>
+
+  .banner {
+    background-color: #3c3c3c8d;
+    padding: 20px;
+    text-align: center;
+  }
+  .animated-headline {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4911f2;
+  }
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  function animateHeadline() {
+    $('.animated-headline').fadeOut(1000, function(){
+      $(this).text("Welcome to Our Website!").fadeIn(1000);
+    });
+  }
+  animateHeadline();
+  setInterval(animateHeadline, 3000);
+});
+ 
+</script>
+</head>
+
+
+<body>
+<div class="banner">
+  <h1 class="animated-headline">Welcome to Our Website!</h1>
+</div>
+
+</body>
+</html>

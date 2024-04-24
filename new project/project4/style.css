@@ -10,10 +10,11 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+
  
 }
 
-.chessboard {
+.chessboard :hover {
   width: 400px;
   height: 400px;
   /* display: grid;
@@ -21,6 +22,9 @@ body {
   grid-template-rows: repeat(8, 50px);
   border: 1px solid black; */
   border: 3px solid black;
+  /* transform: scale(1.1);
+  transition: transform 0.5s ease;
+  transform: rotate(360deg); */
  
 }
 .chessboard div {
@@ -52,4 +56,13 @@ h1::after{
 }
 h1:hover::after{
   width: 100%;
+ 
+}
+.chessboard {
+  width: 400px;
+  /* height: 200px; */
+  /* background-color: #26c706; */
+  /* margin: 50px; */
+  border-radius: 10px;
+  box-shadow:  5px 3px rgba(0, 0, 0, 0.548); 
 }

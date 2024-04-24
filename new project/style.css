@@ -1,41 +1,9 @@
-/* .lg{
-  font-family: "Protest Revolution", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(126,166,220,1) 100%);
-
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  padding: 10px;
-  margin: auto;
-  font-style:italic;
-  font-weight: 200;
-  font-display: auto;
-  gap: 10px;
-  border-radius: 5%;
-  justify-content: center;
-  
-}
-
-
-h1{
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: none;
-}
-
- */
-
  body{
  height: 100vh;
 }
 
 .main{
-  background-image: url(https://cdn.pixabay.com/photo/2019/06/01/22/41/river-4245261_1280.jpg);
+  background-image: url(https://img.freepik.com/free-vector/stock-trader-mask-fallen-graphs-background-stock-exchange-market-after-coronavirus-pandemic-world-economic-crisis-vector-illustration_596401-617.jpg?t=st=1709616827~exp=1709620427~hmac=12c28b39ffa5e401a957bf9d697309265287839338857ccd3e49e4f9e24d4751&w=1060);
   height: 100%;
   border: 2px solid #000;
   background-repeat: no-repeat;
@@ -69,6 +37,8 @@ h1{
   backdrop-filter: blur(2px);
   
 }
+
+
 .btn{
   text-align: center;
   margin: auto;
@@ -90,15 +60,18 @@ body{
   
   width: 150px;
   height: 25px;
-
-  
   margin: 0px 75px;
- 
   font-family:lg;
   font-weight: 200;
   font-display: auto;
   border-radius: 5px;
 }
+.inp:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+input[type="password"] {-webkit-text-security: disc !important;}
 
 i{
   font-size: 2rem;
